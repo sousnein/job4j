@@ -20,7 +20,7 @@ public class MultiMaxTest {
     @Test
     public void whenThirdMax() {
         MultiMax check = new MultiMax();
-        int result = check.max(8, 4, 10);
-        assertThat(result, is(10));
+        int result = check.max(8, 4, 12);
+        assertThat(result, is(12));
     }
 }
