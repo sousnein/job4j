@@ -11,10 +11,21 @@ public class CheckTest {
         boolean result = Check.mono(input);
         assertThat(result, is(true));
     }
-
+    @Test
+    public void whenDataMonoByFalseThenTrue() {
+        boolean[] input = new boolean[] {false, false, false};
+        boolean result = Check.mono(input);
+        assertThat(result, is(true));
+    }
     @Test
     public void whenDataNotMonoByTrueThenFalse() {
         boolean[] input = new boolean[] {true, false, true};
+        boolean result = Check.mono(input);
+        assertThat(result, is(false));
+    }
+    @Test
+    public void we() {
+        boolean[] input = new boolean[] {false, true, false};
         boolean result = Check.mono(input);
         assertThat(result, is(false));
     }
