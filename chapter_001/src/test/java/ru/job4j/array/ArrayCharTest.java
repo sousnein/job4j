@@ -20,4 +20,11 @@ public class ArrayCharTest {
         boolean result =ArrayChar.startsWith(word, pref);
         assertThat(result, is(false));
     }
+    @Test
+    public void newTest() {
+        char[] word = {'a', 'b', 'd', 'e'};
+        char[] pref = {'a', 'b','c'};
+        boolean result =ArrayChar.startsWith(word, pref);
+        assertThat(result, is(false));
+    }
 }
