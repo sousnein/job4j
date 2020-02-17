@@ -11,4 +11,12 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for ( int j=0;j<board.length;j++ ) {
+            rsl[j] = board[j][j];
+        }
+        return rsl;
+    }
 }
