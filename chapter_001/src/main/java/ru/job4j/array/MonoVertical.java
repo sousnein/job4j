@@ -7,7 +7,7 @@ public class MonoVertical {
             if (board[i][column]=='X') {
                 result = true;
             }
-            else break;
+            else result=false;
         }
         return result;
     }
