@@ -4,11 +4,11 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
-public class sqAreaTest {
+public class SqAreaTest {
     @Test
     public void square() {
         double expected = 1;
-        double out = sqArea.square(4, 1);
+        double out = SqArea.square(4, 1);
         Assert.assertEquals(expected, out, 0.01);
 
     }
@@ -18,7 +18,7 @@ public class sqAreaTest {
         int k = 1;
         int p = 4;
         double expected = 1.0;
-        double s = sqArea.square(p, k);
+        double s = SqArea.square(p, k);
         assertThat(s, is(expected));
     }
 
@@ -27,7 +27,7 @@ public class sqAreaTest {
         int k = 2;
         int p = 6;
         double expected = 2;
-        double s = sqArea.square(p, k);
+        double s = SqArea.square(p, k);
         assertThat(s, is(expected));
     }
 }

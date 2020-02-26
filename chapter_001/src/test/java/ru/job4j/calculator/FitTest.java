@@ -5,18 +5,18 @@ import org.junit.Test;
 
 public class FitTest {
     @Test
-    public void manWeight(){
+    public void manWeight() {
         double in = 180;
         double expected = 92;
         double out = Fit.manWeight(in);
-        Assert.assertEquals(expected, out,0.01);
+        Assert.assertEquals(expected, out, 0.01);
     }
     @Test
-    public void womanWeihgt(){
-        double in=150;
-        double expected =46;
-        double out=Fit.womanWeight(in);
-        Assert.assertEquals(expected,out,0.01);
+    public void womanWeihgt() {
+        double in = 150;
+        double expected = 46;
+        double out = Fit.womanWeight(in);
+        Assert.assertEquals(expected, out, 0.01);
 
     }
 

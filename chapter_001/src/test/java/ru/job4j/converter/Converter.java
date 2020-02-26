@@ -31,20 +31,20 @@ public class Converter {
             boolean passed = expected == out;
             System.out.println("140 rubles are 2 euro. Test result : " + passed);
 
-            in=180;
-            expected=3;
+            in = 180;
+            expected = 3;
             out = rubleToDollar(in);
             passed = expected == out;
             System.out.println("180 rubles are 3 dollar. Test result : " + passed);
 
-            in=10;
-            expected=700;
+            in = 10;
+            expected = 700;
             out = euroToRouble(in);
             passed = expected == out;
             System.out.println("10 euro are 700 rubles. Test result : " + passed);
 
-            in=5;
-            expected=300;
+            in = 5;
+            expected = 300;
             out = dollarToRuble(in);
             passed = expected == out;
             System.out.println("5 dollars are 300 rubles. Test result : " + passed);

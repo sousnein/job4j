@@ -5,10 +5,10 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index;
-                while(point<array.length-1){
-                    String temp=array[point];
-                    array[point]=array[point+1];
-                    array[point+1]=temp;
+                while (point < array.length - 1) {
+                    String temp = array[point];
+                    array[point] = array[point + 1];
+                    array[point + 1] = temp;
                     point++;
                 }
                 // указатель, на не null ячейку.
