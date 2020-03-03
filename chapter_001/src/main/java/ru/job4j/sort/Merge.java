@@ -6,16 +6,6 @@ public class Merge {
 
     public int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
-       /* for (int i = 0; i < (left.length + right.length); i++) {
-            if (left[left.length - i ] > right[right.length - i ]) {
-               rsl[i] = right[right.length - i - 1];
-               rsl[i++] = left[left.length - i - 1];
-            } else {
-                rsl[i] = left[left.length - i - 1];
-                rsl[i++] = right[right.length - i - 1];
-            }
-        }*/
-
         int aI = 0;
         int bI = 0;
         int i = 0;
