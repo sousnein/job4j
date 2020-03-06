@@ -6,7 +6,6 @@ public class ArrayDefinition {
         String[] surnames = new String[100500];
         float[] prices = new float[40];
         String[] names = new String[4];
-
         names[0] = "Daniil";
         names[1] = "Evgeny";
         names[2] = "Egor";

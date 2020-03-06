@@ -11,9 +11,6 @@ public class Defragment {
                     array[point + 1] = temp;
                     point++;
                 }
-                // указатель, на не null ячейку.
-                // переместить первую не null ячейку
-                // Здесь нужен цикл while
             }
             System.out.print(array[index] + " ");
         }
