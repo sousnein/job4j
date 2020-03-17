@@ -10,7 +10,7 @@ public class BallStory {
         ball.sing(hare);
         hare.letGo(ball);
         ball.run(wolf);
-        wolf.loose(ball);
+        wolf.lose(ball);
         ball.trust(fox);
         fox.deceive(ball);
         fox.eat(ball);
