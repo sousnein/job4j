@@ -6,10 +6,11 @@ public class PointTest {
 
     @Test
     public  void distance() {
-        double x1 = 0, y1 = 0, x2 = 2, y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        double expected = 2;
-        Assert.assertEquals(expected, out, 0.01);
+        Point pt1 = new Point(5,3);
+        Point pt2 = new Point(2,7);
+        double expected = 5;
+        double out = pt1.distance(pt2);
+        Assert.assertEquals(expected,out,0.01);
     }
 
 }
