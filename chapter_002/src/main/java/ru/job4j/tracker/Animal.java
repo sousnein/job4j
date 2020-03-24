@@ -5,7 +5,10 @@ public class Animal {
         super();
         System.out.println("load animal");
     }
+    public Animal(String name) {
+    }
     public static void main(String[]args) {
         Tiger tiger = new Tiger();
+        Tiger tiger1 = new Tiger("sheesh");
     }
 }
