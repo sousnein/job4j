@@ -62,7 +62,7 @@ public class Shop {
             }
         }
         System.out.println("вызов меьтода");
-        e.delete(products, 2);
+        e.delete(products, 1);
         for (int i = 0; i < products.length; i++) {
             Product product = products[i];
             //проверяем, что объект не равен null. тк у нас массив не заполнен целиком.
