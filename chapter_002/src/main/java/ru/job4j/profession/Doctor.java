@@ -1,6 +1,6 @@
 package ru.job4j.profession;
 
-public class Doctor extends Profession{
+public class Doctor extends Profession {
 
     private String diagnose;
     private Boolean success;
@@ -8,19 +8,19 @@ public class Doctor extends Profession{
     private long numberOfDisease;
     private  Boolean anesthesia;
 
-    public Boolean doAnesthesia(Pacient pacient){
+    public Boolean doAnesthesia(Pacient pacient) {
         return anesthesia;
     }
-    public Boolean treatPatient(Pacient pacient){
+    public Boolean treatPatient(Pacient pacient) {
         return success;
     }
-    public long questionPatient(Pacient pacient){
+    public long questionPatient(Pacient pacient) {
         return numberOfDisease;
     }
-    public Boolean checkPatient(Pacient pacient){
+    public Boolean checkPatient(Pacient pacient) {
         return checkGuess;
     }
-    public long diagnose(Pacient pacient){
+    public long diagnose(Pacient pacient) {
         return numberOfDisease;
     }
 
