@@ -30,7 +30,7 @@ public class Library {
         System.out.println("Книга с именем 'Clean code'");
         for (int index = 0; index < library.length; index++) {
             Book bk = library[index];
-            if (bk.getTitle() == "Clean Code") {
+            if (bk.getTitle() == book1.getTitle()) {
                 System.out.println(bk.getTitle() + " - " + bk.getPages() + " страниц");
             }
         }
