@@ -80,7 +80,12 @@ public class Tracker {
         return index != -1 ? items[index] : null;
     }
     public boolean replace(String id, Item item) {
-        int thatIndex = indexOf(id);
-        return true;
+        boolean result = false;
+        if (indexOf(id) != -1) {
+            item.setId(id);
+            items[indexOf(id)] = item;
+            result = true;
+        }
+            return result;
     }
 }
