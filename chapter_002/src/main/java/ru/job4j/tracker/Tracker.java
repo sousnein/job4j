@@ -40,10 +40,10 @@ public class Tracker {
      * @return  возвращает копию массива this.items без null элементов
      */
     public Item[] findAll() {
-        Item[] namesWithoutNull = new Item[this.items.length];
+        Item[] namesWithoutNull = new Item[position];
         int size = 0;
         for (int index = 0; index < this.items.length; index++) {
-            Item name = this.items[index];
+            Item name = items[index];
             if (name != null) {
                 namesWithoutNull[size] = name;
                 size++;
@@ -54,29 +54,33 @@ public class Tracker {
     }
 
     public Item[] findByName(String key) {
-        Item[] result = new Item[this.items.length];
-        int size = 0;
-        for (int index = 0; index < this.items.length; index++) {
+        Item[] result = new Item[position];
+        for (int index = 0; index < position; index++) {
             Item name = this.items[index];
             if (name.getName().equals(key)) {
-                result[size] = name;
-                size++;
+                result[index] = name;
             }
         }
-        return Arrays.copyOf(result, size);
+        return Arrays.copyOf(result, position);
+    }
+
+    private int indexOf(String id) {
+        int rsl = -1;
+        for (int index = 0; index < position; index++) {
+            if (items[index].getId().equals(id)) {
+                rsl = index;
+                break;
+            }
+        }
+        return rsl;
     }
 
     public Item findById(String id) {
-        Item[] result = new Item[this.items.length];
-        int size = 0;
-        for (int index = 0; index < this.items.length; index++) {
-            Item name = this.items[index];
-            if (name.getId().equals(id)) {
-                return name;
-            }
-        }
-        return null;
+        int index = indexOf(id);
+        return index != -1 ? items[index] : null;
     }
-
-
+    public boolean replace(String id, Item item) {
+        int thatIndex = indexOf(id);
+        return true;
+    }
 }
