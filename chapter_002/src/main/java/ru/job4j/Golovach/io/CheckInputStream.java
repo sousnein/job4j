@@ -1,4 +1,4 @@
-package ru.job4j.Golovach.IO;
+package ru.job4j.Golovach.io;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
